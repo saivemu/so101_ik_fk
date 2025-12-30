@@ -33,3 +33,5 @@ dependencies = [
 where = ["."]
 include = ["so101_ik_fk*"]
 
+[tool.setuptools.package-data]
+"so101_ik_fk" = ["urdfs/*.urdf", "urdfs/assets/*.stl"]

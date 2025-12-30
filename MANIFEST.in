@@ -1,0 +1,5 @@
+include so101_ik_fk/urdfs/*.urdf
+include so101_ik_fk/urdfs/assets/*.stl
+include requirements.txt
+include README.md
+

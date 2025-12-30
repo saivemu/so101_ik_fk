@@ -18,9 +18,9 @@ from .kinematics import RobotKinematics
 # Constants
 # =============================================================================
 
-# Default path to SO101 URDF (relative to repo root)
-# The file is expected to be in ../../urdfs/ relative to this file (so101_ik_fk/lib/so101_kinematics.py -> so101_ik_fk/urdfs/)
-DEFAULT_SO101_URDF_PATH = Path(__file__).parents[2] / "urdfs" / "so101_new_calib.urdf"
+# Default path to SO101 URDF (relative to package root)
+# The file is expected to be in ../urdfs/ relative to this file (lib/so101_kinematics.py -> urdfs/)
+DEFAULT_SO101_URDF_PATH = Path(__file__).parents[1] / "urdfs" / "so101_new_calib.urdf"
 
 # Joint names for SO101 (matches URDF, excludes gripper)
 SO101_JOINT_NAMES = [
