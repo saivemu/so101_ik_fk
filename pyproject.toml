@@ -29,9 +29,9 @@ dependencies = [
 "Homepage" = "https://github.com/kartiksonu/so101_ik_fk"
 "Bug Tracker" = "https://github.com/kartiksonu/so101_ik_fk/issues"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["so101_ik_fk*"]
+[tool.setuptools]
+packages = ["so101_ik_fk", "so101_ik_fk.lib", "so101_ik_fk.utils"]
+package-dir = {"so101_ik_fk" = "."}
 
 [tool.setuptools.package-data]
 "so101_ik_fk" = ["urdfs/*.urdf", "urdfs/assets/*.stl"]
